@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1e799433.css",
+    "main.js": "/static/js/main.68bab161.js",
+    "static/js/787.aeca62f9.chunk.js": "/static/js/787.aeca62f9.chunk.js",
+    "static/media/Profile.png": "/static/media/Profile.42b4629ddbb5b01594fc.png",
+    "static/media/instagram.png": "/static/media/instagram.fe5c5dbaf8f6296ec7a7.png",
+    "static/media/dicksluiter.png": "/static/media/dicksluiter.3752e1a644c63c184697.png",
+    "static/media/kingfarmer.png": "/static/media/kingfarmer.fcd3bfab7db0e3c578c5.png",
+    "static/media/seafoodjulid.png": "/static/media/seafoodjulid.e182f9787753f0cef140.png",
+    "static/media/cyborgguppy.png": "/static/media/cyborgguppy.be95ca23b6303c47199b.png",
+    "static/media/javascript.png": "/static/media/javascript.76536eb2b86398277df3.png",
+    "static/media/bootstrap.png": "/static/media/bootstrap.d5210cdeab1bc94309c4.png",
+    "static/media/homesteak.png": "/static/media/homesteak.b236ff6418ff475722b1.png",
+    "static/media/whatsapp.png": "/static/media/whatsapp.288c668ccb8033e17ce1.png",
+    "static/media/penguin.png": "/static/media/penguin.99ee08c8ed574b850e79.png",
+    "static/media/reactjs.png": "/static/media/reactjs.20adfb35ae6a6e5817bf.png",
+    "static/media/css3.png": "/static/media/css3.cbfe6e6c445f86d20be0.png",
+    "static/media/illustrator.png": "/static/media/illustrator.c20e20e1082df0bd1ad0.png",
+    "static/media/github.png": "/static/media/github.87d094f9cf5306581f87.png",
+    "index.html": "/index.html",
+    "main.1e799433.css.map": "/static/css/main.1e799433.css.map",
+    "main.68bab161.js.map": "/static/js/main.68bab161.js.map",
+    "787.aeca62f9.chunk.js.map": "/static/js/787.aeca62f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e799433.css",
+    "static/js/main.68bab161.js"
+  ]
+}
