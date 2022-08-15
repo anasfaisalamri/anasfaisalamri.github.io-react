@@ -1,5 +1,14 @@
+:root {
+  --animate-delay: 0.5s;
+  /* --animate-delay: 1s;
+  --animate-delay: 1.2s;
+  --animate-delay: 1.4s;
+  --animate-delay: 1.6s; */
+}
+
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -35,4 +44,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar-brand {
+  cursor: pointer;
+}
+
+.nav-link > .active {
+  border-bottom: none;
+  text-decoration: none;
+  color: white;
 }
