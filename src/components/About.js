@@ -1,45 +1,8 @@
 import React from "react";
 import { Col, Container, Row, Image } from "react-bootstrap";
-import Bootstrap from "../assets/logo/bootstrap.png";
-import Css from "../assets/logo/css3.png";
-import Github from "../assets/logo/github.png";
-import Gitbash from "../assets/logo/gitbash.png";
-import Html from "../assets/logo/html5.png";
-import Illustrator from "../assets/logo/illustrator.png";
-import Javascript from "../assets/logo/javascript.png";
-import Photoshop from "../assets/logo/photoshop.png";
-import Reactjs from "../assets/logo/reactjs.png";
-import Vscode from "../assets/logo/vscode.png";
+import iconAbout from "./IconAbout";
 
 const About = () => {
-  const tools = [
-    { logo: Html, dataAos: "fade-up" },
-    { logo: Css, dataAos: "fade-up", delay: "100" },
-    {
-      logo: Bootstrap,
-      url: "https://getbootstrap.com/",
-      dataAos: "fade-up",
-      delay: "200",
-    },
-    { logo: Javascript, dataAos: "fade-up", delay: "300" },
-    {
-      logo: Reactjs,
-      url: "https://reactjs.org/",
-      dataAos: "fade-up",
-      delay: "400",
-    },
-    {
-      logo: Github,
-      url: "https://github.com/",
-      dataAos: "fade-up",
-      delay: "500",
-    },
-    { logo: Gitbash, dataAos: "fade-up", delay: "600" },
-    { logo: Vscode, dataAos: "fade-up", delay: "700" },
-    { logo: Photoshop, dataAos: "fade-up", delay: "800" },
-    { logo: Illustrator, dataAos: "fade-up", delay: "900" },
-  ];
-
   return (
     <div id="about" className="pt-5 mt-5">
       <Container className="text-center mt-5">
@@ -72,16 +35,9 @@ const About = () => {
           Tools
         </h4>
         <Row className="px-5 mx-5 mt-3 justify-content-center">
-          {tools.map((tool, index) => (
+          {iconAbout.map((icon, index) => (
             <Col key={index} xs={9} sm={3} md={2} classNamex="m-3">
-              <a href={tool.url} target="_blank" rel="noreferrer">
-                <Image
-                  src={tool.logo}
-                  fluid
-                  data-aos={tool.dataAos}
-                  data-aos-delay={tool.delay}
-                />
-              </a>
+              <Image src={icon} fluid data-aos="fade-up" data-aos-delay="500" />
             </Col>
           ))}
         </Row>
