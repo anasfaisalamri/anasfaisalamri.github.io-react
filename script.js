@@ -22,7 +22,7 @@ tools.forEach((value, index) => {
 
 isiTools.forEach((value, index) => {
   let col = document.createElement("div");
-  col.setAttribute("class", "col-sm-3 col-md-2 m-3");
+  col.setAttribute("class", "col-3 col-md-2 m-3");
   col.setAttribute("data-aos", "fade-up");
   col.setAttribute("data-aos-offset", "150");
   col.setAttribute("data-aos-delay", `${(delay += 50)}`);
@@ -42,11 +42,8 @@ let design = [
   "luwakmotobike",
   "kingfarmer",
   "homesteak",
-  "flowerfish",
   "seafoodjulid",
-  "batagor",
   "butetjayatas",
-  "buttalewangang",
 ];
 
 let bagianDesign = document.querySelector(".design");
@@ -58,15 +55,10 @@ design.forEach((value, index) => {
 });
 
 isiGambar.forEach((value, index) => {
-  let owlItem = document.createElement("div");
-  owlItem.setAttribute("class", "item");
-
   let imgItem = document.createElement("img");
   imgItem.setAttribute("src", value);
 
-  owlItem.appendChild(imgItem);
-
-  bagianDesign.appendChild(owlItem);
+  bagianDesign.appendChild(imgItem);
 });
 
 let contacts = [
@@ -98,33 +90,3 @@ let isiContact = `${contacts
   .join("")}`;
 
 bagianContact.innerHTML = isiContact;
-
-// $(document).ready(function () {
-//   $(".owl-carousel").owlCarousel();
-// });
-
-$(".project")
-  .find(".owl-carousel")
-  .owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 2500,
-    margin: 10,
-    nav: false,
-    dotsClass: false,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      800: {
-        items: 3,
-      },
-      1000: {
-        items: 4,
-      },
-    },
-  });
