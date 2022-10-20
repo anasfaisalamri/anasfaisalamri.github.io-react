@@ -55,3 +55,30 @@
   text-decoration: none;
   color: white;
 }
+
+.scroll-container {
+  height: 500px;
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-container,
+.scroll-area {
+  margin: 0 auto;
+}
+
+.scroll-area {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 0 12px;
+}
+
+.scroll-area img {
+  height: 500px;
+}
