@@ -20,7 +20,7 @@ const Home = () => {
           Anas Faisal Amri
         </h1>
         <h5 className="fw-light animate__animated animate__fadeInUp animate__delay-2s">
-          Frontend Web Development
+          Junior Web Developer
         </h5>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
