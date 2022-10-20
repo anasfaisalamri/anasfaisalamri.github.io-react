@@ -1,0 +1,28 @@
+const portfolioImg = [
+  require("../assets/thumb/cyborgguppy.png"),
+  require("../assets/thumb/luwakmotobike.png"),
+  require("../assets/thumb/butetjayatas.png"),
+  require("../assets/thumb/seafoodjulid.png"),
+  require("../assets/thumb/homesteak.png"),
+  require("../assets/thumb/kingfarmer.png"),
+  require("../assets/thumb/flowerfish.png"),
+  // require("../assets/thumb/batagor.png"),
+  // require("../assets/thumb/buttalewangang.png"),
+  // require("../assets/thumb/dicksluiter.png"),
+  // require("../assets/thumb/penguin.png"),
+  // require("../assets/thumb/ayambakarbangkadir.png"),
+  // require("../assets/thumb/baksokawani.png"),
+  // require("../assets/thumb/fishniro.png"),
+  // require("../assets/thumb/ghanimchicken.png"),
+  // require("../assets/thumb/naskunbalebat.jpg"),
+  // require("../assets/thumb/pentoljudes.png"),
+  // require("../assets/thumb/pempekmaktjiek.png"),
+  // require("../assets/thumb/senosnakehead.png"),
+  // require("../assets/thumb/luwakmotobike.png"),
+  // require("../assets/thumb/butetjayatas.png"),
+  // require("../assets/thumb/susukambing.png"),
+  // require("../assets/thumb/yukimura.png"),
+  // require("../assets/thumb/angertiger.jpg"),
+];
+
+export default portfolioImg;
