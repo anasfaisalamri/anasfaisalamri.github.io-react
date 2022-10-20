@@ -1,39 +1,16 @@
 import React from "react";
 import { Col, Container, Row, Image } from "react-bootstrap";
-import Github from "../assets/logo/github.png";
-import Whatsapp from "../assets/logo/whatsapp.png";
-import Instagram from "../assets/logo/instagram.png";
+import IconContact from "./IconContact";
 
 const Contact = () => {
-  const contacts = [
-    {
-      logo: Github,
-      url: "https://github.com/anasfaisalamri",
-      dataAos: "fade-right",
-      delay: "100",
-    },
-    {
-      logo: Whatsapp,
-      url: "https://wa.me/6285161552498",
-      dataAos: "fade-up",
-      delay: "200",
-    },
-    {
-      logo: Instagram,
-      url: "https://instagram.com/anasfaisalamri",
-      dataAos: "fade-left",
-      delay: "300",
-    },
-  ];
-
   return (
     <div id="contact" className="pt-5 mt-2">
       <Container className="text-center pt-5">
         <h3 data-aos="fade-up">Contact</h3>
         <Row className="justify-content-center mt-5">
-          {contacts.map((contact, index) => (
+          {IconContact.map((contact, index) => (
             <Col key={index} sm={3} md={3} className="m-3">
-              <a href={contact.url} target="_balnk" rel="noreferrer">
+              <a href={contact.url} target="_blank" rel="noreferrer">
                 <Image
                   src={contact.logo}
                   fluid
