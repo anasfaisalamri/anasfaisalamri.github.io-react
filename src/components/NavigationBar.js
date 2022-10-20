@@ -1,31 +1,9 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link, animateScroll as scroll } from "react-scroll";
+import navLink from "./NavigationLink";
 
 const NavigationBar = () => {
-  const navLink = [
-    {
-      title: "Home",
-      url: "home",
-      animate: "animate__animated animate__bounceInDown animate__delay-1s",
-    },
-    {
-      title: "About",
-      url: "about",
-      animate: "animate__animated animate__bounceInDown animate__delay-1s",
-    },
-    {
-      title: "Portfolio",
-      url: "portfolio",
-      animate: "animate__animated animate__bounceInDown animate__delay-1s",
-    },
-    {
-      title: "Contact",
-      url: "contact",
-      animate: "animate__animated animate__bounceInDown animate__delay-1s",
-    },
-  ];
-
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
