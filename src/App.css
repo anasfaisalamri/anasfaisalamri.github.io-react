@@ -101,11 +101,11 @@
 }
 
 @media (max-width: 575.98px) {
-  #portfolio.scroll-area {
+  #portfolio .scroll-area {
     padding: 0 20px;
   }
 
-  #portfolio.scroll-area img {
+  #portfolio .scroll-area img {
     height: 350px;
   }
 }
