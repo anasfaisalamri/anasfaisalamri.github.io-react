@@ -93,7 +93,7 @@
 }
 
 #portfolio .scroll-area img {
-  height: 500px;
+  width: 500px;
 }
 
 #contact img {
@@ -106,6 +106,6 @@
   }
 
   #portfolio .scroll-area img {
-    height: 350px;
+    width: 345px;
   }
 }
