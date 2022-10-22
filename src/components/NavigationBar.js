@@ -27,7 +27,10 @@ const NavigationBar = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ms-auto" navbarScroll>
+            <Nav
+              className="ms-auto animate__animated animate__bounceInDown"
+              navbarScroll
+            >
               {navLink.map((link, index) => (
                 <Nav.Link key={index} className={link.animate}>
                   <Link

@@ -37,7 +37,13 @@ const About = () => {
         <Row className="px-5 mx-5 mt-3 justify-content-center">
           {iconAbout.map((icon, index) => (
             <Col key={index} xs={9} sm={3} md={2} className="m-3">
-              <Image src={icon} fluid data-aos="fade-up" />
+              <Image
+                src={icon}
+                fluid
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="200"
+              />
             </Col>
           ))}
         </Row>

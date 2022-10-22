@@ -12,11 +12,11 @@ const Home = () => {
       >
         <Image
           src={Profile}
-          className="img-thumbnail rounded-circle animate__animated animate__headShake animate__delay-0.5s"
+          className="img-thumbnail rounded-circle animate__animated animate__flipInY animate__delay-0.5s"
           alt="profile"
           style={{ width: "200px" }}
         />
-        <h1 className="fw-light display-4 animate__animated animate__zoomIn animate__delay-1s">
+        <h1 className="fw-light display-4 animate__animated animate__fadeInDown animate__delay-1s">
           Anas Faisal Amri
         </h1>
         <h5 className="fw-light animate__animated animate__fadeInUp animate__delay-2s">

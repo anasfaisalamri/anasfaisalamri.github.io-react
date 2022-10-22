@@ -9,7 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 AOS.init({
-  startEvent: "load",
+  startEvent: "DOMContentLoaded",
 });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
