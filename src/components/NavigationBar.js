@@ -1,11 +1,11 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import navLink from "./NavigationLink";
 
 const NavigationBar = () => {
   const scrollToTop = () => {
-    scroll.scrollToTop();
+    window.scroll({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -37,8 +37,8 @@ const NavigationBar = () => {
                     activeClass="active"
                     to={link.url}
                     spy={true}
-                    offset={10}
-                    duration={600}
+                    offset={20}
+                    duration={500}
                   >
                     {link.title}
                   </Link>

@@ -9,8 +9,8 @@ const About = () => {
         <h3 data-aos="fade-up" data-aos-offset="200">
           About Me
         </h3>
-        <Row className="justify-content-center mt-4">
-          <Col md={4}>
+        <Row className="justify-content-center mt-4 px-1">
+          <Col md={5} lg={4}>
             <p data-aos="fade-right" data-aos-delay="200">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
               sequi veritatis, harum, voluptate architecto quidem ducimus quae
@@ -19,7 +19,7 @@ const About = () => {
               voluptatibus sint, dolore natus consequuntur?
             </p>
           </Col>
-          <Col md={4}>
+          <Col md={5} lg={4}>
             <p data-aos="fade-left" data-aos-delay="400">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
               inventore pariatur nihil, laudantium obcaecati saepe iste
@@ -36,7 +36,7 @@ const About = () => {
         </h4>
         <Row className="px-5 mx-5 mt-3 justify-content-center">
           {iconAbout.map((icon, index) => (
-            <Col key={index} xs={9} sm={3} md={2} className="m-3">
+            <Col key={index} xs={9} sm={4} md={2} className="m-3">
               <Image
                 src={icon}
                 fluid

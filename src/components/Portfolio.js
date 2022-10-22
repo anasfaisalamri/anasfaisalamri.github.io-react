@@ -1,17 +1,17 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 import portfolioImg from "./PortfolioImg";
 
 const Portfolio = () => {
   return (
-    <div id="portfolio" style={{ backgroundColor: "#2e3336" }} className="pt-5">
+    <div id="portfolio" className="pt-5">
       <h3 className="text-center text-white mt-5" data-aos="fade-up">
         Portfolio
       </h3>
       <Container className="scroll-container mt-5">
         <div className="scroll-area">
           {portfolioImg.map((portfolio, index) => (
-            <img src={portfolio} key={index} alt={index} />
+            <Image src={portfolio} key={index} alt={index} />
           ))}
         </div>
       </Container>

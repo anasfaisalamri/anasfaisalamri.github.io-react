@@ -5,16 +5,11 @@ import Profile from "../assets/Profile.png";
 const Home = () => {
   return (
     <div id="home">
-      <Container
-        fluid
-        className="text-center text-white"
-        style={{ padding: "100px 0 0 0", backgroundColor: "#2e3336" }}
-      >
+      <Container fluid className="text-center text-white">
         <Image
           src={Profile}
           className="img-thumbnail rounded-circle animate__animated animate__flipInY animate__delay-0.5s"
           alt="profile"
-          style={{ width: "200px" }}
         />
         <h1 className="fw-light display-4 animate__animated animate__fadeInDown animate__delay-1s">
           Anas Faisal Amri

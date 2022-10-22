@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div id="contact" className="pt-5 mt-2">
       <Container className="text-center pt-5">
-        <h3 data-aos="fade-up">Contact</h3>
+        <h3 data-aos="fade-up">Contact Me</h3>
         <Row className="justify-content-center mt-5">
           {IconContact.map((contact, index) => (
             <Col key={index} sm={3} md={3} className="m-3">
@@ -14,7 +14,6 @@ const Contact = () => {
                 <Image
                   src={contact.logo}
                   fluid
-                  style={{ maxWidth: "150px" }}
                   data-aos={contact.dataAos}
                   data-aos-delay={contact.delay}
                 />
