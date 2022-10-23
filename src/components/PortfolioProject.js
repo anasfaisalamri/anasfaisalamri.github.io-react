@@ -1,18 +1,21 @@
 const portoProject = [
   {
-    nama: "To-do-List",
-    github: "https://github.com/anasfaisalamri/to-to-list",
-    url: "anasfaisalamri.github.io/to-do-list",
+    nama: "Calculator",
+    github: "https://github.com/anasfaisalamri/calculator",
+    url: "https://anasfaisalamri.github.io/calculator",
+    img: require("../assets/thumb/dicksluiter.png"),
   },
   {
-    nama: "Calculator",
-    github: "https://github.com/anasfaisalamri/calcutaor",
-    url: "anasfaisalamri.github.io/calculator",
+    nama: "To-do-List",
+    github: "https://github.com/anasfaisalamri/to-do-list",
+    url: "https://anasfaisalamri.github.io/to-do-list",
+    img: require("../assets/thumb/batagor.png"),
   },
   {
     nama: "Wedding Invitation",
     github: "https://github.com/anasfaisalamri/wedding-inv",
-    url: "anasfaisalamri.github.io/wedding-inv",
+    url: "https://anasfaisalamri.github.io/wedding-inv",
+    img: require("../assets/thumb/flowerfish.png"),
   },
 ];
 
