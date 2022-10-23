@@ -69,11 +69,17 @@
   background-color: #2e3336;
 }
 
+#portfolio .card-img {
+  height: 100%;
+  min-height: 300px;
+  background-color: greenyellow;
+}
+
 #portfolio .scroll-container {
-  height: 500px;
+  height: 540px;
   display: flex;
   overflow: auto;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x proximity;
 }
 
 #portfolio .scroll-container,
@@ -94,13 +100,14 @@
 
 #portfolio .scroll-area img {
   width: 500px;
+  border-radius: 5px;
 }
 
 #contact img {
   max-width: 150px;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 550px) {
   #portfolio .scroll-area {
     padding: 0 20px;
   }
