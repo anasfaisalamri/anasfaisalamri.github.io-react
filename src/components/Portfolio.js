@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Image } from "react-bootstrap";
+import { Card, Col, Container, Image, Row } from "react-bootstrap";
 import portfolioImg from "./PortfolioImg";
+import portoProject from "./PortfolioProject";
 
 const Portfolio = () => {
   return (
@@ -8,6 +9,15 @@ const Portfolio = () => {
       <h3 className="text-center text-white mt-5" data-aos="fade-up">
         Portfolio
       </h3>
+      <Container>
+        <Row>
+          {portoProject.map((project, index) => (
+            <Col>
+              <Card></Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
       <Container className="scroll-container mt-5">
         <div className="scroll-area">
           {portfolioImg.map((portfolio, index) => (
