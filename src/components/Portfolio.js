@@ -10,18 +10,57 @@ const Portfolio = () => {
         Portfolio
       </h3>
       <Container>
-        <Row>
+        <Row className="justify-content-center my-5">
           {portoProject.map((project, index) => (
-            <Col>
-              <Card></Card>
+            <Col md={4} key={index} className="px-3 py-2">
+              <Card
+                key={index}
+                data-aos="fade-down"
+                data-aos-offset="300"
+                data-aos-delay="200"
+              >
+                <Card.Link href={project.url} target="_blank" rel="noreferrer">
+                  {/* <div class="project"></div> */}
+                  <Card.Img className="project" />
+                </Card.Link>
+                <Card.Body>
+                  <Card.Title>
+                    <Card.Link
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-decoration-none text-black"
+                    >
+                      {project.nama}
+                    </Card.Link>
+                  </Card.Title>
+                  <Card.Text>
+                    <p>ini bagian deskripsi dari setiap project</p>
+                    <Card.Link
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Github
+                    </Card.Link>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </Col>
           ))}
         </Row>
       </Container>
-      <Container className="scroll-container mt-5">
+      <Container className="scroll-container">
         <div className="scroll-area">
           {portfolioImg.map((portfolio, index) => (
-            <Image src={portfolio} key={index} alt={index} />
+            <Image
+              src={portfolio}
+              key={index}
+              alt={index}
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-delay="200"
+            />
           ))}
         </div>
       </Container>
