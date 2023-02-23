@@ -5,43 +5,31 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
-
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <link rel="stylesheet" href="vendor/aos/dist/aos.css" />
-
-    <link
-      rel="stylesheet"
-      href="vendor/OwlCarousel2/dist/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="vendor/OwlCarousel2/dist/assets/owl.theme.default.min.css"
-    />
-
-    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>Anas Faisal Amri | Personal Web</title>
   </head>
   <body>
     <!-- Navbar -->
     <nav
-      class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow-sm animate__animated animate__bounce"
+      class="navbar fixed-top navbar-expand-lg navbar-dark shadow-sm animate__animated animate__bounce"
+      id="navbar"
     >
       <div class="container">
-        <a
-          class="navbar-brand animate__animated animate__bounceInLeft animate__delay-1s"
-          href="#home"
-          >Anas Faisal Amri</a
+        <div
+          class="navbar-brand to-top animate__animated animate__bounceInLeft animate__delay-1s"
         >
+          Anas Faisal Amri
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -57,9 +45,9 @@
           <div
             class="navbar-nav ms-auto animate__animated animate__bounceInDown animate__delay-1s"
           >
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#home" class="to-top">Home</a>
             <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#project">Portfolio</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
             <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
@@ -67,13 +55,20 @@
     </nav>
     <!-- akhiir Navbar -->
 
-    <div class="content" data-bs-spy="scroll" data-bs-smooth-scroll="true">
+    <div
+      class="content"
+      data-bs-spy="scroll"
+      data-bs-target="#navbar"
+      data-bs-smooth-scroll="true"
+      data-bs-root-margin="0px 0px "
+      tabindex="0"
+    >
       <!-- Jumbotron -->
       <section class="jumbotron text-center" id="home">
         <img
-          src="assets/img/profile.png"
+          src="assets/img/profile.jpg"
           alt="Anas Fasial Amri"
-          class="rounded-circle img-thumbnail animate__animated animate__flipInY animate__delay-1s"
+          class="rounded-circle animate__animated animate__flipInY animate__delay-1s"
           width="200"
         />
         <h1
@@ -133,7 +128,7 @@
               </p>
             </div>
           </div>
-          <h3 class="text-center" data-aos="fade-up" data-aos-offset="150">
+          <h3 class="text-center mt-5" data-aos="fade-up" data-aos-offset="150">
             Tools
           </h3>
           <div class="row tools mx-5 px-5 mt-3 justify-content-center"></div>
@@ -149,15 +144,16 @@
       <!-- akhir About -->
 
       <!-- Project -->
-      <section id="project" class="project">
+      <section id="portfolio" class="portfolio">
         <div class="container">
           <h3
             class="text-center mb-3 text-white"
             data-aos="fade-down"
             data-aos-offset="200"
           >
-            Project
+            Portfolio
           </h3>
+          <div class="row justify-content-center mt-5 project"></div>
           <div class="row justify-content-center mt-5">
             <div
               class="col-12"
@@ -195,7 +191,7 @@
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
-            fill="#212529"
+            fill="#222629"
             fill-opacity="1"
             d="M0,192L48,181.3C96,171,192,149,288,160C384,171,480,213,576,229.3C672,245,768,235,864,224C960,213,1056,203,1152,192C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
@@ -204,12 +200,12 @@
       <!-- akhir Contact -->
 
       <!-- Footer -->
-      <footer class="bg-dark text-white text-center py-3">
+      <footer class="text-white text-center py-3">
         <p>
-          Created with <i class="bi-heart-fill text-danger"></i> by
+          Copyright &copy; <span class="year"></span>. Created by
           <a
             href="https://www.instagram.com/anasfaisalamri/"
-            class="text-white fw-semibold text-decoration-none"
+            class="fw-semibold text-decoration-none"
             >Anas Faisal Amri</a
           >
         </p>
@@ -217,13 +213,14 @@
       <!-- Akhir Footer -->
     </div>
 
-    <script src="vendor/jquery-3.6.1.js"></script>
-    <script src="vendor/OwlCarousel2/dist/owl.carousel.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="vendor/aos/dist/aos.js"></script>
+    <script src="assets/js/jquery-3.6.1.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
